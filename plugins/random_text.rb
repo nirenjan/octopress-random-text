@@ -21,7 +21,7 @@ module Jekyll
     def render(context)
       rendered = <<-RANDJS
         <p id="#{@id}"></p>
-        <script text="javascript">
+        <script type="text/javascript">
           var request = new XMLHttpRequest();
           request.onload = function() {
             // get the file contents
